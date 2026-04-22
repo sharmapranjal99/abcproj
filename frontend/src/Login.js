@@ -6,7 +6,7 @@ function Login() {
   const [password, setPassword] = useState("");
 
   const login = async () => {
-    const res = await fetch("http://localhost:5000/login", {
+    const res = await fetch("https://abcproj.onrender.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
