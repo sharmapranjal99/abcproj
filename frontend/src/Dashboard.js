@@ -8,7 +8,7 @@ function Dashboard() {
   const [expenses, setExpenses] = useState([]);
 
   const addExpense = async () => {
-    await fetch("http://localhost:5000/expense", {
+    await fetch("https://abcproj.onrender.com/expense", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -21,7 +21,7 @@ function Dashboard() {
   };
 
   const getExpenses = async () => {
-    const res = await fetch("http://localhost:5000/expenses", {
+    const res = await fetch("https://abcproj.onrender.com/expenses", {
       headers: {
         "Authorization": localStorage.getItem("token")
       }
